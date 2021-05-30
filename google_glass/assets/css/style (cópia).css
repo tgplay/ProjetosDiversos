@@ -1,0 +1,243 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@font-face{
+	font-family: 'FonteLogo';
+	src:url("../fonts/bubblegum-sans-regular.otf");
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+	font-family: arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #dddddd;
+	color: rgba(0,0,0,1);
+	overflow-x: hidden;
+}
+div#interface{
+	/* display: flex; */
+	/* flex-direction: column; */
+	height: 100%;
+	max-width: 815px;
+	background-color: #fff;
+	margin: auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 10px;	
+}
+.container{
+	display: flex;
+}
+p{
+	text-align: justify;
+	/*text-indent: 50px;*/
+}
+a {
+	color: #606060;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+header#cabecalho{
+	display: flex;
+	border-bottom: 1px solid #606060;
+	height: 150px;
+	background: url(../images/glass-logo-peq.jpg) no-repeat 0px 100px;
+}
+header#cabecalho h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgb(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif;
+	color: #888888;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: 0px;
+}
+header#cabecalho img#icone{
+	position: absolute;
+    left: 745px;
+    top: 68px;
+    z-index: 1;
+}
+
+/* Formataçãop de imagens com legendas */
+figure.foto-legenda{
+	position: relative;
+	border: 8px solid #fff;
+	box-shadow: 1px 1px 4px #000;
+}
+figure.foto-legenda img{
+	width: 100%;
+	height: 100%;
+}
+figure.foto-legenda figcaption{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,.4);
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+/*Formatação do Menu*/
+
+nav#menu{
+	display: flex;
+	flex-direction: column;	
+}
+nav#menu ul{
+	display: flex;	
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 325px;
+}
+nav#menu li{	
+	background-color: #dddddd;
+	padding: 7px;
+	margin: 2px;
+	transition: background-color 1s;
+	-webkit-transition: background-color 1s;
+	-o-transition: background-color 1s;	
+}
+nav#menu li:hover{
+	background-color: #606060;
+}
+nav#menu h1{
+	display: none;
+}
+nav#menu a{
+	color: #000;
+	text-decoration: none;
+}
+nav#menu a:hover{
+	color: #fff;
+}
+section#corpo{
+	display: flex;
+	flex-direction: column;
+	/* width: 500px; */
+	width: 60%;
+	border-right: 1px solid #606060;
+	padding-right: 15px;   
+	/* border: 1px solid red;  */
+}
+article#noticia-principal h2{
+	font-size: 13pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+header#cabecalho-artigo h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+	margin-bottom: 0;
+}
+.direita{
+	text-align: right;
+}
+header#cabecalho-artigo h2{
+	font-size: 16pt;
+	color: #cecece;
+	background-color: #fff;
+	margin: 0px;
+}
+header#cabecalho-artigo h3{
+	font-size: 12pt;
+	color: #606060; 
+}
+table#tabelaspec{	
+	width: 431px;		
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin: auto;
+}
+table#tabelaspec td{	
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle; 
+}
+table#tabelaspec td.ce{
+	color: #ffffff;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight: bold;
+}
+table#tabelaspec td.cd{
+	background-color: #cececece;
+}
+table#tabelaspec caption{
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bold;
+}
+table#tabelaspec caption span{
+	display: block;
+	float: right;
+	color: #000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+aside#lateral{	
+	width: 40%;
+    /* width: 350px;   */ 
+    /* position: absolute; */
+    /* right: 190px; */
+    /* right: 225px;
+    top: 176px; */
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #dddddd;	
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    /* border: 1px solid green; */
+}
+aside#lateral h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+}
+aside#lateral h2{
+	background-color: #606060;
+	font-size: 13pt;
+	color: #ffffff;
+	padding: 5px
+
+}
+footer#rodape{
+	display: flex;
+	justify-content: center;	
+	border-top: 1px solid #606060;	
+}
+footer#rodape p{
+	text-align: center;
+}
+
+/* PAREI NA AULA 23*/
+/*.menu_nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}*/
+
