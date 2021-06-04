@@ -1,14 +1,31 @@
-#exemplo{
+.preto{
+    background-color: #000;
+    color: #fff;
+}
+.verde{
+    background-color: #00ff00;
+    color: #000;
+}
+
+
+
+/*#exemplo{
     height: 200px;
     width: 200px;
     margin: 20px;
     border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .verde{
     background-color: #00ff00;
     color: #fff;
-    font-weight: 700;
-    font-size: 50px;
+    font-weight: 700;    
+}
+h5{
+    font-size: 30px;
 }
 .vermelho{
     background-color: #ff0000;
@@ -18,3 +35,13 @@
     background-color: #0000ff;
     color: #fff;
 }
+.botoes{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 20px;
+}
+button{
+    margin: 5px;
+}
+/*
