@@ -1,3 +1,3 @@
 <?php $render('header'); ?>
 
-Opa, <?=$nome;?>
+Algum conteúdo
