@@ -19,7 +19,7 @@ class UsuariosController extends Controller {
 
             if(count($data) === 0){                
                 Usuario::insert([
-                    'name' => $name,
+                    'nome' => $name,
                     'email' => $email
                 ])->execute();
 
