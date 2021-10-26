@@ -1,3 +1,7 @@
 <?php $render('header'); ?>
 
-Algum conteúdo
+Base: <?php echo $base; ?>
+
+<a href="<?=$base;?>/novo">Novo usuário</a>
+
+<?php $render('footer'); ?>

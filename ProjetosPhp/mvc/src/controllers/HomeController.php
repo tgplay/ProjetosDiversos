@@ -9,20 +9,10 @@ class HomeController extends Controller {
         $this->render('home');
     }
 
-    public function fotos(){
-        $this->render('fotos');        
-    }
-
-    public function foto($parametros){
-        echo "Única foto...";
-        print_r($parametros);
-
-    }
-
-    public function sobre() {
+    public function sobre(){
         $this->render('sobre');
     }
-
+   
     public function sobreP($args) {
         print_r($args);
     }
