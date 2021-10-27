@@ -1,6 +1,6 @@
 <footer>
     <hr/>
-    Todos od direitos reservados
+    Todos os direitos reservados
 </footer>
 </body>
 </html>
