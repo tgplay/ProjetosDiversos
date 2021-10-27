@@ -1,7 +1,5 @@
 <?php $render('header'); ?>
 
-Base: <?php echo $base; ?>
-
-<a href="<?=$base;?>/novo">Novo usuário</a>
+<a href="<?=$base; ?>/novo">Novo Usuário</a>
 
 <?php $render('footer'); ?>

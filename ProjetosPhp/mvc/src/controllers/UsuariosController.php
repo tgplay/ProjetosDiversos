@@ -15,21 +15,18 @@ class UsuariosController extends Controller {
         $email = filter_input(INPUT_POST, 'email');
 
         if($name && $email){
-            $data = Usuario::select('usuario')->where('email', $email)->execute();
+            $data = Usuario::select()->where('email', $email)->execute();
 
-            if(count($data) === 0){                
+            if(count($data) === 0){
                 Usuario::insert([
                     'nome' => $name,
                     'email' => $email
                 ])->execute();
+               $this->redirect('/');
+            } 
 
-                $this->redirect('/');               
-            }           
-                            
-        } 
-        
-        $this->redirect('/novo'); 
-        
+        }
+        $this->redirect('/novo');        
     }
 
 }
