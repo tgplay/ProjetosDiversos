@@ -14,7 +14,7 @@
         <input type="email"  name="email"/>
     </label><br/><br/>
 
-    <input type="submit" value="Adicionar"/>
+    <input type="submit" />
 </form>
 
 
