@@ -7,7 +7,7 @@ class CalculadoraTest extends TestCase {
 
         $this->assertEquals(
             2,
-            $calc->soma(1,1)
+           $calc->soma(1,1) 
         );
     }
 
