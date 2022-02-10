@@ -1,0 +1,26 @@
+body{
+    background-color: #00ff00;
+}
+.main_menu{
+    background-color: #ff0000;
+}
+.main_menu ul,
+.main_menu li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.main_menu li{
+    display: inline;
+}
+.container{
+    width: 70%;
+    float: left;
+}
+sidebar{    
+    width: 30%;
+    float: left;
+}
+.widget_title{
+    color: #0000ff;
+}
