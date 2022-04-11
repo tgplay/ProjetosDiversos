@@ -26,3 +26,32 @@ label{
     font-weight: 700;
     font-size: 25px;
 }
+article{
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+}
+article .post_thumbnail{
+    float: left;
+    margin-right: 20px;
+}
+.post_miniatura{
+    width: 135px;
+}
+.paginacao{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.pagina_anterior{
+    float: left;
+}
+.proxima_pagina{
+    float: right;
+}
+.custom-logo{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-right: 20px;
+}
