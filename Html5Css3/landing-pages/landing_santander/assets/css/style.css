@@ -1,0 +1,40 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color:#808080;
+    font-size: 18px;
+  }
+  .lp-header{
+    background: url('../images/Rectangle-170.jpg') no-repeat center;
+    background-size: cover;
+    height: 70vh;
+  }
+  .lp-header h1{
+    font-size: 64px;
+    font-weight: 900;
+  }
+  .bg-gray{
+    background: #323232;
+  }
+  strong{
+    font-weight: 900;
+  }
+  .btn-black{
+    background: #000;
+    color: #fff;
+  }
+  .btn-black:hover{
+    color: #fff;
+  }
+  .text-black{
+    color: #000;
+  }
+  @media screen and (max-width: 768px){
+    .lp-header{
+      background: url('../images/Rectangle-170-m.jpg') no-repeat center;
+      background-size: cover;
+    }
+    .lp-header h1{
+      font-size: 28px;
+    }
+  }
+  
