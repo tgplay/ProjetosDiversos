@@ -51,10 +51,7 @@ body{
 .topobusca{
     width: 110px;
     height: 23px;
-    outline: 0;
-
-
-    
+    outline: 0;    
 }
 .toporight a{
     float: right;
@@ -62,3 +59,99 @@ body{
 .toporight input{
     float: right;
 }
+.toporight img{
+    margin-right: 4px;
+}
+.topo2{
+    height: 95px;    
+    color: #fff;    
+}
+.topo2int{
+    width: 100%;
+    max-width: 1040px;
+    height: 95  px;
+    margin: 0 auto;
+}
+.logo{
+    width: 230px;
+    height: 90px;
+    float: left;
+    margin-top: 5px;
+}
+.topo2 .banner{
+    width: 650px;
+    height: 80px;
+    float: right;
+    margin-top: 7px;
+    background-color: red;
+}
+.menu{
+    height: 40px;
+    background-color: red;
+}
+.menuint{
+    width: 100%;
+    max-width: 1040px;
+    height: 40px;
+    margin: auto;    
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.menu li:hover .submenu{
+    display: block;     
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;    
+}
+.submenu{
+    width: 150px;
+    height: 150px;
+    background-color: #ff0000;
+    position: absolute;
+    display: none;
+}
+.submenuitem{
+    height: 30px;
+    line-height: 30px;
+    width: 140px;
+    padding-left: 10px;
+}
+.submenuitem:hover{
+    background-color: #ff5555;
+}
+.ultimasnoticias{
+    height: 50px;
+}
+.ultimasnoticiasint{
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+    height: 50px;
+}
+.ultnoticiasarea{
+    height: 28px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+.ultinoticiastitulo{
+    background-color: #ff0000;
+    color: #fff;
+    height: 28px;
+    display: inline-block;
+}
+.ultinoticiasnoticia{
+
+}
+    
