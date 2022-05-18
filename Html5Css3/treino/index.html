@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Treino Modal com Checkbox</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <h3>Select your favorite sports:</h3>
+                <label>
+                  <input type="checkbox" value="football" name="sport" id="checkbox1"> Football</label>
+                <label>
+                  <input type="checkbox" value="baseball" name="sport"> Baseball</label>
+                <label>
+                  <input type="checkbox" value="cricket" name="sport"> Cricket</label>
+                <label>
+                  <input type="checkbox" value="boxing" name="sport"> Boxing</label>
+                <label>
+                  <input type="checkbox" value="racing" name="sport"> Racing</label>
+                <label>
+                  <input type="checkbox" value="swimming" name="sport"> Swimming</label>
+                <br>
+                <button type="button">Get Values</button>
+              </form>
+
+
+
+
+            <!-- Botão para acionar modal -->
+            <button type="button" class="btn btn-primary mt" data-toggle="modal" data-target="#modalExemplo">
+                Abrir modal de demonstração
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title alert alert-warning" id="exampleModalLabel">Você tem certeza que deseja habilitar o recurso timesheet?</h4>                           
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-danger" role="alert">
+                                <h5>Os valores serão cobrados conforme a tabela abaixo:</h5>
+                            </div>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <th>Valor cobrado por funcionário</th>                                        
+                                </thead>
+                                <tbody>
+                                    <tr>                                            
+                                        <td>R$ 12,00</td>
+                                    </tr>                                        
+                                </tbody>
+                            </table>
+                            <p id="checkid"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>                            
+                            <button type="button">Sim</button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            
+        </div>       
+    </body>
+</html>
