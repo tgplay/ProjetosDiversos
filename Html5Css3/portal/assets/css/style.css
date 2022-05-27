@@ -330,6 +330,9 @@ body{
     .containerint{
         max-width: 890px;
     }
+    #menu{
+        display: block !important;
+    }
     .leftside{
         width: 600px;
     }
@@ -357,6 +360,9 @@ body{
     }
     .topo2 .banner{
         display: none;
+    }
+    #menu{
+        display: block !important;
     }
     .logo{
         float: none;
@@ -414,6 +420,7 @@ body{
         position: absolute;
         background-color: red;
         z-index: 10;
+        display: none;
     }
     .menu li{
         float: none;
