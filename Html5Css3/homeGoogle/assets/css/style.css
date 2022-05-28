@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.topo{
+    height: 60px;    
+    /*background-color: red;*/
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.topoint{
+    height: 48px;
+    width: 260px;    
+    display: flex;    
+    justify-content: space-around;
+    /*background-color: purple;*/
+}
+.topoint-textos,
+.topoint-appslogin{
+    height: 48px;
+    width: 100%;    
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+}
+.topoint-textos a{
+    color: #000;
+    text-decoration: none;
+} 
+
+.topoint-appslogin a{
+    color: #000;
+    text-decoration: none;
+}
