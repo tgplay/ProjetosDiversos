@@ -23,4 +23,23 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 		
 	}
+
+	public function geraplanilha(){
+        $this->load->library('PHPExcel');
+        $arquivo = './planilhas/planilha.xlsx';        
+        $planilha = $this->phpexcel;
+
+        $planilha->setActiveSheetIndex(0)->setCellValue("A1", "Nome");
+        $planilha->setActiveSheetIndex(0)->setCellValue("A2", "Sobrenome");
+        $planilha->setActiveSheetIndex(0)->setCellValue("B1", "E-mail");
+
+        $planilha->getActiveSheet()->setTitle('Planilha 1');
+
+        $objgravar = PHPExcel_IOFactory::createWriter($planilha, 'Excel2007');
+        $objgravar->save($arquivo);
+
+
+
+
+    }
 }

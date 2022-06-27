@@ -6,4 +6,6 @@ class homeController extends controller{
         $this->loadView('home');
             
     }
+
+   
 }
